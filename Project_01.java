@@ -40,7 +40,7 @@ public class Project_01 {
 
             if (guess == targetNumber) {
                 guessedCorrectly = true;
-                System.out.println("🎉 Correct! You guessed the number in " + attempts + " attempts.");
+                System.out.println("\n🎉 Correct! You guessed the number in " + attempts + " attempts.");
 
                 if (attempts < highScore) {
                     highScore = attempts;
@@ -51,9 +51,9 @@ public class Project_01 {
 
                 break;
             } else if (guess < targetNumber) {
-                System.out.println("📉 Too low! Try again.");
+                System.out.println("\n Too low! Try again.");
             } else {
-                System.out.println("📈 Too high! Try again.");
+                System.out.println("\n Too high! Try again.");
             }
         }
 
