@@ -28,10 +28,10 @@ public class ATM {
                     deposit();
                     break;
                 case 4:
-                    System.out.println("Thank you for using the ATM. Goodbye!");
+                    System.out.println("\nThank you for using the ATM. Goodbye!");
                     return;
                 default:
-                    System.out.println("Invalid option. Please try again.");
+                    System.out.println("\nInvalid option. Please try again.");
             }
         }
     }
@@ -42,31 +42,31 @@ public class ATM {
         System.out.println("2. Withdraw");
         System.out.println("3. Deposit");
         System.out.println("4. Exit");
-        System.out.print("Enter choice: ");
+        System.out.print("\nEnter choice: ");
     }
 
     private void checkBalance() {
-        System.out.printf("Your current balance is: $%.2f%n", account.getBalance());
+        System.out.printf("\nYour current balance is: $%.2f%n", account.getBalance());
     }
 
     private void withdraw() {
-        System.out.print("Enter amount to withdraw: ");
+        System.out.print("\nEnter amount to withdraw: ");
         double amount = scanner.nextDouble();
         if (account.Withdraw(amount)) {
-            System.out.println("Withdrawal successful.");
+            System.out.println("\nWithdrawal successful.");
         } else {
-            System.out.println("Insufficient balance or invalid amount.");
+            System.out.println("\nInsufficient balance or invalid amount.");
         }
     }
 
     private void deposit() {
-        System.out.print("Enter amount to deposit: ");
+        System.out.print("\nEnter amount to deposit: ");
         double amount = scanner.nextDouble();
         if (amount > 0) {
             account.Deposit(amount);
-            System.out.println("Deposit successful.");
+            System.out.println("\nDeposit successful.");
         } else {
-            System.out.println("Invalid deposit amount.");
+            System.out.println("\nInvalid deposit amount.");
         }
     }
 }
