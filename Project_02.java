@@ -5,14 +5,14 @@ public class Project_02 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter number of subjects: ");
+        System.out.print("\nEnter number of subjects: ");
         int numSubjects = sc.nextInt();
 
         int[] marks = new int[numSubjects];
         int totalMarks = 0;
 
         for (int i = 0; i < numSubjects; i++) {
-            System.out.print("Enter marks for subject " + (i + 1) + " (out of 100): ");
+            System.out.print("\nEnter marks for subject " + (i + 1) + " (out of 100): ");
             marks[i] = sc.nextInt();
 
             if (marks[i] < 0 || marks[i] > 100) {
@@ -42,9 +42,9 @@ public class Project_02 {
         }
 
         System.out.println("\n===== RESULTS =====");
-        System.out.println("Total Marks: " + totalMarks + " out of " + (numSubjects * 100));
-        System.out.println("Average Percentage: " + averagePercentage + "%");
-        System.out.println("Grade: " + grade);
+        System.out.println("\nTotal Marks: " + totalMarks + " out of " + (numSubjects * 100));
+        System.out.println("\nAverage Percentage: " + averagePercentage + "%");
+        System.out.println("\nGrade: " + grade);
 
         sc.close();
     }
